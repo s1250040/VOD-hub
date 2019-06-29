@@ -20,8 +20,8 @@ export default {
   methods: {
     async exe() {   
       this.$emit("loadStart")    //$emit イベントを送出するもので、JavaScriptで例えるとdispatchEvent   取得したデータを$emitを通じて、親コンポーネントで受け取れるようにする。
-      const { data } = await axios.get(`//itunes.apple.com/search?term=${this.term}&country=jp&entity=musicVideo`);
-    //   const { data } = await axios.get(`//ihttps://streamzui-streamzui-v1.p.rapidapi.com/search?country={country}&yearStart={yearstart}&yearEnd={yearend}&page={page}&asin={asin}&imdbid={imdbid}&title={$this.term}`);
+    //   const { data } = await axios.get(`//itunes.apple.com/search?term=${this.term}&country=jp&entity=musicVideo`);
+      const { data } = await axios.get(`https://itunes.apple.com/search?term=${this.term}&country=jp&entity=movie`);
       this.$emit("loadComplete", { results: data.results })
     },
   },
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   height: 70px;
@@ -54,5 +54,5 @@ export default {
   background-color: #42b883;
   border: none;
   border-radius: 20px;
-}
+} */
 </style>

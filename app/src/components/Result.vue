@@ -37,49 +37,35 @@ export default {
 </script>
 
 <style scoped>
-.item {
+/* .item {
   padding: 20px 0;
 }
- 
- 
 .item:nth-of-type(even) {
   background-color: #f5f5f5;
 }
- 
- 
 .item-inner {
   display: flex;
   width: 90%;
   max-width: 600px;
   margin: auto;
 }
- 
- 
 .photo {
   flex: 0 0 150px;
 }
- 
- 
 .photo-img {
   width: 100%;
   display: block;
 }
- 
- 
 .content {
   flex: 1 1;
   padding-left: 20px;
 }
- 
- 
 .track {
   color: #42b883;
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
 }
- 
- 
 .artist {
   display: block;
   color: #42b883;
@@ -87,15 +73,11 @@ export default {
   font-weight: 700;
   text-decoration: none;
 }
- 
- 
 .data {
   margin-top: 1.5em;
   text-align: right;
   font-size: 1.2rem;
 }
- 
- 
 .loading {
   position: fixed;
   top: 70px;
@@ -104,5 +86,5 @@ export default {
   left: 0;
   z-index: 1;
   background: #35495e;
-}
+} */
 </style>
