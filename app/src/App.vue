@@ -1,6 +1,8 @@
 <template>
   <div class="root">
+    
     <Search class="search" @loadStart="onLoadStart" @loadComplete="onLoadComplete"/><!-- SearchコンポーネントからloadStart/loadCompleteイベントを購読する -->
+   
     <Result :items="items" :loadProgress="loadProgress"/><!-- ResultコンポーネントにitemsとloadProgressを送る -->
   </div>
 </template>
@@ -34,7 +36,7 @@ export default {
 
 
 <style scoped>
-/* .root {
+.root {
   padding-top: 70px;
 }
  
@@ -45,12 +47,12 @@ export default {
   top: 0;
   left: 0;
   z-index: 1;
-} */
+}
 </style>
  
  
 <style>
-/* html {
+html {
   font-size: 62.5%;
 }
 body {
@@ -63,6 +65,6 @@ p {
 ul {
   padding: 0;
   margin: 0;
-} */
+}
 </style>
 
